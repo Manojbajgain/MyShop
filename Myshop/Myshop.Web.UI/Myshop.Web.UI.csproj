@@ -175,6 +175,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductManagerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -275,6 +276,10 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\ProductManager\Index.cshtml" />
+    <Content Include="Views\ProductManager\Create.cshtml" />
+    <Content Include="Views\ProductManager\Edit.cshtml" />
+    <Content Include="Views\ProductManager\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -287,6 +292,24 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Myshop.cor\Myshop.cor.csproj">
+      <Project>{15ff7f28-2b08-45fa-84e4-12b608d2138b}</Project>
+      <Name>Myshop.cor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Myshop.DAtaacess.In memory\Myshop.DAtaacess.In memory.csproj">
+      <Project>{be215f2c-614a-4bba-be62-de6c3ce311d0}</Project>
+      <Name>Myshop.DAtaacess.In memory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Myshop.DataAcess.SQl\Myshop.DataAcess.SQl.csproj">
+      <Project>{a3b3a457-61d8-4f3a-b801-09e2c17ba144}</Project>
+      <Name>Myshop.DataAcess.SQl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Myshop.Services\Myshop.Services.csproj">
+      <Project>{d6d3224b-9048-4f0c-a5ab-9c645b49af18}</Project>
+      <Name>Myshop.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
